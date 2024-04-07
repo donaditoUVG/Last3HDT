@@ -1,0 +1,7 @@
+El Nice value es un valor en sistemas operativos tipo Unix, como Linux, que determina la prioridad de un proceso en la planificación del CPU. Aquí hay algunos puntos clave:
+
+Rango de Valores: El Nice value puede variar entre -20 y 19, donde -20 es la mayor prioridad y 19 es la menor.
+Prioridad del Proceso: Un Nice value bajo significa que el proceso tiene una alta prioridad y obtendrá más tiempo de CPU. Un valor alto indica una baja prioridad.
+Comandos nice y renice: El comando nice se utiliza para iniciar un proceso con un Nice value específico, mientras que renice se usa para cambiar la prioridad de un proceso en ejecución12.
+Permisos: Solo el superusuario (root) puede establecer un Nice value que aumente la prioridad de un proceso (valores negativos). Cualquier usuario puede disminuir la prioridad de sus propios procesos (valores positivos).
+En resumen, el Nice value es una herramienta que los administradores de sistemas y usuarios pueden utilizar para influir en cómo el planificador del sistema asigna tiempo de CPU a los procesos, basándose en su importancia relativa o necesidad de recursos.
