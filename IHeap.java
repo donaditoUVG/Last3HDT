@@ -10,9 +10,9 @@ public interface IHeap<P, V> {
 
 	void Insert(P priority, V value);
 	
-	V get();
+	V get(); //Elemento de mayor prioridad
 	
-	V remove();
+	V remove(); //eliminar el de mayor p.
 	
 	int count();
 	

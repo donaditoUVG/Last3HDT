@@ -28,10 +28,10 @@ public Proceso(String nombreProceso, String nombreUsuario, int valorNice){
         // Calcular la prioridad (PR) según el valor nice del proceso
 
         //El valor Nice afecta la prioridad del proceso. En esta caso, si es menor aumentará la prioridad.
-        int prioridad = 20 + this.valorNice;
+        int prioridad = 120 + this.valorNice;
 
         // Comparar la prioridad con la del otro proceso
-        return Integer.compare(prioridad, 20 + otroProceso.valorNice);
+        return Integer.compare(prioridad, 120 + otroProceso.valorNice);
     }
 
     
@@ -77,7 +77,7 @@ public Proceso(String nombreProceso, String nombreUsuario, int valorNice){
     // Sobreescribir el método toString para imprimir los datos del proceso
     @Override
     public String toString() {
-        return nombreProceso + "," + nombreUsuario + "," + valorNice + ", PR=" + (20 + valorNice);
+        return nombreProceso + "," + nombreUsuario + "," + valorNice + ", PR=" + (120 + valorNice);
     }
 }
 
